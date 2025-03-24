@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e4e4e4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#payment-instruction {
+    margin-top: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+input {
+    padding: 8px;
+    font-size: 16px;
+    width: 80%;
+    max-width: 400px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #00de2f;
+}
+
+#confirm-payment-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+#confirm-payment-btn:hover {
+    background-color: #00de2f;
+}
+
+/* Estilo do modal */
+.modal {
+    display: none; /* Começa escondido */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Fica acima de todo o conteúdo */
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.qr-code {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+#copy-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+#copy-icon:hover {
+    opacity: 0.7;
+}
+
+/* Estilo da chave Pix e do ícone de copiar */
+.pix-key-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#pix-key-display {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 80%;
+    max-width: 250px;
+    margin-right: 10px;
+}
+
+/* Estilo do botão de confirmação no modal */
+#confirm-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#confirm-btn:hover {
+    background-color: #00de2f;
+}
+
+/* Barra verde no topo */
+.top-bar {
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Ajuste para evitar que a barra verde cubra o conteúdo */
+body {
+    padding-top: 40px; /* Espaço para a barra verde */
+}
+
+
+.footer {
+    font-size: 12px; /* Texto pequeno */
+    color: #777; /* Cor discreta */
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f8f8; /* Fundo suave */
+    border-top: 1px solid #ddd; /* Linha sutil para separar */
+}

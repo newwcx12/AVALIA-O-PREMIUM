@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1f1f1;
+    flex-direction: column;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 900px;
+    height: 50%;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.text-section {
+    width: 50%;
+    text-align: left;
+}
+
+.text-section h1 {
+    font-size: 48px;
+    color: #333;
+}
+
+.text-section p {
+    font-size: 34px;
+    color: #555;
+}
+
+.start-button {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #45a049;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.start-button:hover {
+    background-color: #00de2f;
+}
+
+.image-section {
+    width: 30%;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+
+    .text-section, .image-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .image-section img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .text-section h1 {
+        font-size: 36px;
+    }
+
+    .text-section p {
+        font-size: 20px;
+    }
+
+}
+
+.footer {
+    font-size: 12px; /* Texto pequeno */
+    color: #777; /* Cor discreta */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f8f8; /* Fundo suave */
+    border-top: 1px solid #ddd; /* Linha sutil para separar */
+}
+
+/* Barra verde no topo */
+.top-bar {
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Ajuste para evitar que a barra verde cubra o conteúdo */
+body {
+    padding-top: 40px; /* Espaço para a barra verde */
+}

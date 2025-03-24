@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt">
+<div class="top-bar">AVALIAÇÃO REMUNERADA</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1><span id="saldo">Saldo: R$ <span id="valorSaldo">0,00</span></span></h1>
+
+        <div class="brands">
+            <!-- Marca 1 -->
+            <div class="brand">
+                <img src="images/logo1.png" alt="APPLE" class="brand-logo">
+                <p>APPLE</p>
+                <div class="stars" data-index="0">
+                    <img src="images/estrela_vazia.png" class="star" data-value="1">
+                    <img src="images/estrela_vazia.png" class="star" data-value="2">
+                    <img src="images/estrela_vazia.png" class="star" data-value="3">
+                    <img src="images/estrela_vazia.png" class="star" data-value="4">
+                    <img src="images/estrela_vazia.png" class="star" data-value="5">
+                </div>
+                <div class="opinion-container hidden">
+                    <label for="opinion-0">Qual sua opinião?</label>
+                    <textarea id="opinion-0" rows="3" placeholder="Escreva sua opinião..."></textarea>
+                </div>
+            </div>
+
+            <!-- Marca 2 -->
+            <div class="brand">
+                <img src="images/logo2.png" alt="XIAOMI" class="brand-logo">
+                <p>XIAOMI</p>
+                <div class="stars" data-index="1">
+                    <img src="images/estrela_vazia.png" class="star" data-value="1">
+                    <img src="images/estrela_vazia.png" class="star" data-value="2">
+                    <img src="images/estrela_vazia.png" class="star" data-value="3">
+                    <img src="images/estrela_vazia.png" class="star" data-value="4">
+                    <img src="images/estrela_vazia.png" class="star" data-value="5">
+                </div>
+                <div class="opinion-container hidden">
+                    <label for="opinion-1">Qual sua opinião?</label>
+                    <textarea id="opinion-1" rows="3" placeholder="Escreva sua opinião..."></textarea>
+                </div>
+            </div>
+
+            <!-- Marca 3 -->
+            <div class="brand">
+                <img src="images/logo3.png" alt="SAMSUNG" class="brand-logo">
+                <p>SAMSUNG</p>
+                <div class="stars" data-index="2">
+                    <img src="images/estrela_vazia.png" class="star" data-value="1">
+                    <img src="images/estrela_vazia.png" class="star" data-value="2">
+                    <img src="images/estrela_vazia.png" class="star" data-value="3">
+                    <img src="images/estrela_vazia.png" class="star" data-value="4">
+                    <img src="images/estrela_vazia.png" class="star" data-value="5">
+                </div>
+                <div class="opinion-container hidden">
+                    <label for="opinion-2">Qual sua opinião?</label>
+                    <textarea id="opinion-2" rows="3" placeholder="Escreva sua opinião..."></textarea>
+                </div>
+            </div>
+
+            <!-- Marca 4 -->
+            <div class="brand">
+                <img src="images/logo4.png" alt="DELL" class="brand-logo">
+                <p>DELL</p>
+                <div class="stars" data-index="3">
+                    <img src="images/estrela_vazia.png" class="star" data-value="1">
+                    <img src="images/estrela_vazia.png" class="star" data-value="2">
+                    <img src="images/estrela_vazia.png" class="star" data-value="3">
+                    <img src="images/estrela_vazia.png" class="star" data-value="4">
+                    <img src="images/estrela_vazia.png" class="star" data-value="5">
+                </div>
+                <div class="opinion-container hidden">
+                    <label for="opinion-3">Qual sua opinião?</label>
+                    <textarea id="opinion-3" rows="3" placeholder="Escreva sua opinião..."></textarea>
+                </div>
+            </div>
+
+            <!-- Marca 5 -->
+            <div class="brand">
+                <img src="images/logo5.png" alt="HP" class="brand-logo">
+                <p>HP</p>
+                <div class="stars" data-index="4">
+                    <img src="images/estrela_vazia.png" class="star" data-value="1">
+                    <img src="images/estrela_vazia.png" class="star" data-value="2">
+                    <img src="images/estrela_vazia.png" class="star" data-value="3">
+                    <img src="images/estrela_vazia.png" class="star" data-value="4">
+                    <img src="images/estrela_vazia.png" class="star" data-value="5">
+                </div>
+                <div class="opinion-container hidden">
+                    <label for="opinion-4">Qual sua opinião?</label>
+                    <textarea id="opinion-4" rows="3" placeholder="Escreva sua opinião..."></textarea>
+                </div>
+            </div>
+
+            <!-- Marca 6 -->
+            <div class="brand">
+                <img src="images/logo6.png" alt="ASUS" class="brand-logo">
+                <p>ASUS</p>
+                <div class="stars" data-index="5">
+                    <img src="images/estrela_vazia.png" class="star" data-value="1">
+                    <img src="images/estrela_vazia.png" class="star" data-value="2">
+                    <img src="images/estrela_vazia.png" class="star" data-value="3">
+                    <img src="images/estrela_vazia.png" class="star" data-value="4">
+                    <img src="images/estrela_vazia.png" class="star" data-value="5">
+                </div>
+                <div class="opinion-container hidden">
+                    <label for="opinion-5">Qual sua opinião?</label>
+                    <textarea id="opinion-5" rows="3" placeholder="Escreva sua opinião..."></textarea>
+                </div>
+            </div>
+        </div>
+
+        <button id="finalizarAvaliacao" class="hidden">FINALIZAR AVALIAÇÃO</button>
+    </div>
+    <div id="notification" class="hidden">Você ganhou R$1,50 pela avaliação!</div>
+
+    <script src="script2.js"></script>
+    <footer class="footer">
+    <p>Somos uma plataforma voltada para a coleta e organização de dados com fins estatísticos e analíticos.</p>
+</footer>
+
+</body>
+</html>
